@@ -10,11 +10,7 @@
 			text-align: center;
 		}
 
-		.masthead {
-			display: none;
-		}
-
-		#mastheadSmall {
+		.mastheadSmall {
 			display: none;
 		}
 
@@ -112,7 +108,6 @@
 
 
 	/*  home page  */
-
 		#bio {
 			width: 521px;
 			margin: 0 auto;
@@ -130,7 +125,6 @@
 
 
 	/*  work page  */
-
 		.projects {
 			width: 840px;
 			margin: 0 auto;
@@ -166,19 +160,18 @@
 			float: right;
 		}
 
+
 	/*  resume page  */
-
-		h3 {
-			text-decoration: underline;
-		}
-
 		#resume {
 			padding: 20px;
 			color: #ffffff;
-			width: 1000px;
 			margin: 0 auto;
 		}
 
+		#resume h3 {
+			color: #e5ccff;
+			text-decoration: underline;
+		}
 	/* -------------------- END DESKTOP -------------------- */
 
 
@@ -191,8 +184,8 @@
 				width: 80%;
 			}
 
-		/*  work page  */
 
+		/*  work page  */
 			.projects {
 				width: 400px;
 				margin: 0 auto;
@@ -210,21 +203,32 @@
 
 
 
+
 	/* -------------------- MOBILE -------------------- */
 		@media (max-width: 520px) {
 
-			#mastheadHome {
-				display: none;
+			.mastheadBig {
+				display: none !important;
 			}
 
-			#mastheadSmall {
+			.mastheadSmall {
 				display: inline-block;
 			}
 
-			/*  home page  */
 
+		/*  contact  */
+			#contact {
+				text-align: center;
+				margin-right: 0px;
+				font-size: 1em;
+				padding: 0px;
+			}
+
+
+		/*  home page  */
 			#bio {
 				width: 372px;
+				margin: 0 auto
 			}
 
 			#bio img {
@@ -237,28 +241,23 @@
 			}
 
 
-
-			/*  work page  */
-
+		/*  work page  */
 			.projects {
-				width: 400px;
+				width: 356px;
 				margin: 0 auto;
+			}
+
+			.projects img {
+				width: 356px;
+				height: 356px;
 			}
 
 			.project1 p, .project2 p, .project3 p, .project4 p {
 				margin: 0;
-				width: 400px;
-				height: 400px;
+				width: 356px;
+				height: 356px;
 				padding: 30px 0px 0px 0px;
 			}
 
-
-			/*  resume page  */
-
-				#resume {
-					padding: 20px;
-					width: 1000px;
-					margin: 0 auto;
-				}
 		}
 	/* -------------------- END MOBILE -------------------- */
